@@ -1,8 +1,8 @@
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav #drawer class="sidenav" fixedInViewport
-      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [attr.role]="'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
-      [opened]="(isHandset$ | async) === true">
+      [opened]="false">
     <mat-toolbar></mat-toolbar>
     <mat-nav-list>
       <a mat-list-item href="#">Home</a>
@@ -23,7 +23,6 @@
       </button>
       <span>Portfolio</span>
     </mat-toolbar>
-    <!-- Add Content Here -->
-    <app-footer></app-footer>
+    <!-- main content --> 
   </mat-sidenav-content>
 </mat-sidenav-container>

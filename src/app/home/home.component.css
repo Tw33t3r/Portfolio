@@ -14,8 +14,14 @@
   }
 
   .title-card{
-    max-width: 40%;
-    max-height: 20%;
+/*  TODO
+    Make this a mobile oriented site
+    max-width and max-height do not really work for mobile
+*/
+    width: 30%;
+    height: 20%;
+    max-width: 600px;
+    max-height: 100px;
     position: relative;
     top: 40%;
     left: 10%;

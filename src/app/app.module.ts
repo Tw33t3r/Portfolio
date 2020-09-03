@@ -14,6 +14,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { HomeComponent } from './home/home.component';
 import { MatCardModule } from '@angular/material/card';
+import { SkillsComponent } from './skills/skills.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { ResumeComponent } from './resume/resume.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -21,7 +25,11 @@ import { MatCardModule } from '@angular/material/card';
     AppComponent,
     FooterComponent,
     SidebarComponent,
-    HomeComponent
+    HomeComponent,
+    SkillsComponent,
+    ProjectsComponent,
+    ResumeComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

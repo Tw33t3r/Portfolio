@@ -4,13 +4,13 @@
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="false">
     <mat-toolbar></mat-toolbar>
-    <mat-nav-list>
-      <a mat-list-item href="#">Home</a>
-      <a mat-list-item href="#">Skills</a>
-      <a mat-list-item href="#">Projects</a>
-      <a mat-list-item href="#">Resume</a>
-      <a mat-list-item href="#">Contact</a>
-    </mat-nav-list>
+    <mat-action-list>
+      <button mat-list-item (click)="scroll(home)">Home</button>
+      <button mat-list-item (click)="scroll(skills)">Skills</button>
+      <button mat-list-item (click)="scroll(projects)">Projects</button>
+      <button mat-list-item (click)="scroll(resume)">Resume</button>
+      <button mat-list-item (click)="scroll(contact)">Content</button>
+    </mat-action-list>
   </mat-sidenav>
   <mat-sidenav-content class="content">
     <mat-toolbar color="primary">
@@ -24,7 +24,11 @@
       <span>Portfolio</span>
     </mat-toolbar>
     <!-- main content --> 
-    <app-home></app-home>
+    <div #home> <app-home></app-home> </div>
+    <div #skills> </div>
+    <div #projects> </div>
+    <div #resume> </div>
+    <div #contact>  </div>
     <app-footer></app-footer>
   </mat-sidenav-content>
 </mat-sidenav-container>

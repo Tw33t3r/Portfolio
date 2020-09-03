@@ -18,4 +18,7 @@ export class SidebarComponent {
 
   constructor(private breakpointObserver: BreakpointObserver) {}
 
+  scroll(el: HTMLElement){
+    el.scrollIntoView({behavior:"smooth"});
+  }
 }

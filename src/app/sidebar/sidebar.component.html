@@ -9,7 +9,7 @@
       <button mat-list-item (click)="scroll(skills)">Skills</button>
       <button mat-list-item (click)="scroll(projects)">Projects</button>
       <button mat-list-item (click)="scroll(resume)">Resume</button>
-      <button mat-list-item (click)="scroll(contact)">Content</button>
+      <button mat-list-item (click)="scroll(contact)">Contact</button>
     </mat-action-list>
   </mat-sidenav>
   <mat-sidenav-content class="content">
@@ -25,10 +25,10 @@
     </mat-toolbar>
     <!-- main content --> 
     <div #home> <app-home></app-home> </div>
-    <div #skills> </div>
-    <div #projects> </div>
-    <div #resume> </div>
-    <div #contact>  </div>
+    <div #skills class="skills"> <app-skills></app-skills> </div>
+    <div #projects> <app-projects></app-projects> </div>
+    <div #resume> <app-resume></app-resume> </div>
+    <div #contact> <app-contact></app-contact> </div>
     <app-footer></app-footer>
   </mat-sidenav-content>
 </mat-sidenav-container>

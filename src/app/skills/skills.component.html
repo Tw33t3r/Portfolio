@@ -1,24 +1,51 @@
-<mat-chip-list aria-label="Skill Set">
-    <mat-chip> C++ </mat-chip>
-    <mat-chip> C </mat-chip>
-    <mat-chip> Operating Systems </mat-chip>
+<h1>My Skillset</h1>
+<!--
+    TODO:
+    <p> Click on any of the chips to see projects relevant to each skillset </p>
 
+    Maybe too pale, perhaps a backdrop
+ -->
 
-    <mat-chip> C# </mat-chip>
-    <mat-chip> Universal Windows Platform </mat-chip>
-    <mat-chip> Java </mat-chip>
-
-    <mat-chip> Python </mat-chip>
-    <mat-chip> Machine Learning </mat-chip>
-
-    <mat-chip> Haskell </mat-chip>
-
-    <mat-chip> JavaScript </mat-chip>
-    <mat-chip> TypeScript </mat-chip>
-    <mat-chip> MySQL </mat-chip>
-
-    <mat-chip> Go </mat-chip>
-    <mat-chip> Blockchain </mat-chip>
-
-
-</mat-chip-list>
+<div class="content" fxLayout="row wrap" fxLayoutGap="16px grid">
+    <div fxFlex="6%"></div>
+    <div class="chips" fxFlex="25%" fxFlex.xs="100%">
+        <h2>Programming Languages</h2>
+        <mat-chip-list aria-label="programming-languages">
+            <mat-chip> C++ </mat-chip>
+            <mat-chip> C </mat-chip>
+            <mat-chip> C# </mat-chip>
+            <mat-chip> Java </mat-chip>
+            <mat-chip> Python </mat-chip>
+            <mat-chip> Haskell </mat-chip>
+            <mat-chip> Go </mat-chip>
+            <mat-chip> JavaScript </mat-chip>
+            <mat-chip> TypeScript </mat-chip>
+        </mat-chip-list>
+    </div>
+    <div fxFlex="6%"></div>
+    <div class="chips" fxFlex="25%" fxFlex.xs="100%">
+        <h2>Development Concepts</h2>
+        <mat-chip-list aria-label="development-concepts">
+            <mat-chip> UI/UX Design </mat-chip>
+            <mat-chip> Databases </mat-chip>
+            <mat-chip> Machine Learning </mat-chip>
+            <mat-chip> Operating Systems </mat-chip>
+            <mat-chip> Blockchain </mat-chip>
+            <mat-chip> Scrum </mat-chip>
+        </mat-chip-list>
+    </div>
+    <div fxFlex="6%"></div>
+    <div class="chips" fxFlex="25%" fxFlex.xs="100%">
+        <h2>Technologies</h2>
+        <mat-chip-list aria-label="technologies">
+            <mat-chip> Git </mat-chip>
+            <mat-chip> Docker </mat-chip>
+            <mat-chip> Angular </mat-chip>
+            <mat-chip> Universal Windows Platform </mat-chip>
+            <mat-chip> MySQL </mat-chip>
+            <mat-chip> Microsoft Azure </mat-chip>
+            <mat-chip> ASP.NET </mat-chip>
+        </mat-chip-list>
+    </div>
+    <div fxFlex="6%"></div>
+</div>

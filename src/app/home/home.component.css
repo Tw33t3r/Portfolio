@@ -15,11 +15,7 @@
 
   .title-card{
 /*  TODO
-    Make this a mobile oriented site
-    max-width and max-height do not really work for mobile
-    Stuff like
-        [mode]="(isHandset$ | async) ? 'over' : 'side'"
-
+    Use fxFlex for this
 */
     width: 30%;
     height: 20%;

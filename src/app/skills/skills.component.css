@@ -1,0 +1,12 @@
+h1{
+    left: 5%;
+    position: relative;
+}
+
+.content{
+    padding: 16px;
+}
+
+.mat-chip-list{
+    width: 300px;
+}

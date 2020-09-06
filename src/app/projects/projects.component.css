@@ -1,0 +1,17 @@
+h1{
+    left: 5%;
+    position: relative;
+}
+
+.content{
+    padding: 16px;
+}
+
+.project, .mat-card-content{
+    padding: 10px;
+}
+
+.mat-button{
+    left: 2%;
+    position: relative;
+}

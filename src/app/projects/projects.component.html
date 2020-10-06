@@ -1,22 +1,27 @@
 <h1>Project Portfolio</h1>
 
-<div class="content" fxLayout="row wrap" fxLayoutGap="16px grid">
-    <div fxFlex = 3%></div>
-    <mat-card class="project" fxFlex="25%" fxFlex.xs="100%">
-        <mat-card-header>
-           <mat-card-title>Project 1</mat-card-title>
-           <mat-card-subtitle>Quick description</mat-card-subtitle>
-       </mat-card-header>
-        <!-- <img mat-card-image src="path to image representing project" alt="description of photo" -->
-        <mat-card-content>
-           <p>
-              Full Description of project and importance of said project
-          </p>
-      </mat-card-content>
-      <mat-card-actions>
-          <button mat-button> Demonstration </button>
-          <button mat-button> View Source </button>
-        </mat-card-actions>
-    </mat-card>
-
+<div class="content" fxLayout="row wrap" fxlayoutAlign="space-evenly" fxLayoutGap="16px grid">
+    <!-- TODO:
+        animate projects in??
+        Add pictures for each project
+        Figure out buttons
+    -->
+    <div *ngFor='let projects of Projects' fxFlex="25%" fxFlex.xs="100%" fxLayoutAlign="stretch">
+        <mat-card class="project">
+            <mat-card-header>
+               <mat-card-title>{{projects.title}}</mat-card-title>
+               <mat-card-subtitle>{{projects.description}}</mat-card-subtitle>
+           </mat-card-header>
+            <!-- <img mat-card-image src="path to image representing project" alt="description of photo" -->
+            <mat-card-content>
+               <p>
+                {{projects.importance}}
+              </p>
+          </mat-card-content>
+          <mat-card-actions>
+              <button mat-button> Demonstration </button>
+              <button mat-button> View Source </button>
+            </mat-card-actions>
+        </mat-card>
+    </div>
 </div>

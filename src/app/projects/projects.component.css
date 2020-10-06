@@ -7,11 +7,23 @@ h1{
     padding: 16px;
 }
 
-.project, .mat-card-content{
+.project{
     padding: 10px;
+    display:flex;
+    flex-direction: column;
 }
 
-.mat-button{
+.mat-card-subtitle{
+    padding-top: 10px;
+}
+
+.mat-card-content{
+    flex-grow: 1;
+    overflow: auto;
+    padding: 10px;
+  }
+
+.mat-card-actions{
     left: 2%;
     position: relative;
 }

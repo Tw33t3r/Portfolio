@@ -4,23 +4,23 @@
     <!-- TODO:
         animate projects in??
         Add pictures for each project
-        Figure out buttons
+        Fix padding for cards
     -->
     <div *ngFor='let projects of Projects' fxFlex="25%" fxFlex.sm="33%" fxFlex.xs="100%" fxLayoutAlign="stretch">
         <mat-card class="project">
+            <img mat-card-image src={{projects.image}} alt="Project Photo">
             <mat-card-header>
                <mat-card-title>{{projects.title}}</mat-card-title>
                <mat-card-subtitle>{{projects.description}}</mat-card-subtitle>
            </mat-card-header>
-            <!-- <img mat-card-image src="path to image representing project" alt="description of photo" -->
             <mat-card-content>
                <p>
                 {{projects.importance}}
               </p>
           </mat-card-content>
           <mat-card-actions>
-              <button mat-button> Demonstration </button>
-              <button mat-button> View Source </button>
+              <a mat-button href="{{projects.demonstrationLink}}"> Demonstration </a>
+              <a mat-button href="{{projects.sourceLink}}"> View Source </a>
             </mat-card-actions>
         </mat-card>
     </div>

@@ -8,7 +8,7 @@
       <button mat-list-item (click)="scroll(home)">Home</button>
       <button mat-list-item (click)="scroll(skills)">Skills</button>
       <button mat-list-item (click)="scroll(projects)">Projects</button>
-      <button mat-list-item (click)="scroll(resume)">Resume</button>
+      <a mat-list-item (click)="downloadResume()">Resume</a>
       <button mat-list-item (click)="scroll(contact)">Contact</button>
     </mat-action-list>
   </mat-sidenav>
@@ -27,7 +27,6 @@
     <div #home> <app-home></app-home> </div>
     <div #skills class="skills"> <app-skills></app-skills> </div>
     <div #projects> <app-projects></app-projects> </div>
-    <div #resume> <app-resume></app-resume> </div>
     <div #contact> <app-contact></app-contact> </div>
     <app-footer></app-footer>
   </mat-sidenav-content>

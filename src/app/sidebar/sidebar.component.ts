@@ -21,4 +21,12 @@ export class SidebarComponent {
   scroll(el: HTMLElement){
     el.scrollIntoView({behavior:"smooth"});
   }
+
+  downloadResume(){
+    let link = document.createElement("a");
+    link.download = "Garrett-Tvedt-Resume.pdf";
+    link.href = "assets/resume.pdf";
+    link.click();
+    link.remove();
+  }
 }

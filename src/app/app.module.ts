@@ -19,7 +19,6 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { HomeComponent } from './home/home.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ProjectsComponent } from './projects/projects.component';
-import { ResumeComponent } from './resume/resume.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 
@@ -32,7 +31,6 @@ import { FooterComponent } from './footer/footer.component';
     HomeComponent,
     SkillsComponent,
     ProjectsComponent,
-    ResumeComponent,
     ContactComponent,
     FooterComponent
   ],

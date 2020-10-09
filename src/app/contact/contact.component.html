@@ -1,9 +1,10 @@
-<div class="contact">
+<div class="contact" fxLayout = "column">
   <h1>Contact</h1>
   <h3>If you would like to get in touch, please fill out the following form</h3>
   <br>
-  <mat-card class="contact-form">
-    <form>
+  <div fxLayout = "row">
+  <mat-card class="contact-form" fxFlex="40%" fxFlex.s = "100%" fxFlex.xs="100%">
+    <form> 
       <mat-form-field class="name">
         <mat-label>Name</mat-label>
         <input matInput>
@@ -31,4 +32,6 @@
       <button mat-button type="submit"> Send Message </button>
     </form>
   </mat-card>
+  <div fxFlex.xs = "10%"></div>
+  </div>
 </div>

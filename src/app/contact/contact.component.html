@@ -1,31 +1,34 @@
-<h1>Contact</h1>
-<br>
-<h3>If you would like to get in touch, please fill the following form</h3>
-<br>
-<form class="contact-form">
-    <mat-form-field class="name">
+<div class="contact">
+  <h1>Contact</h1>
+  <h3>If you would like to get in touch, please fill out the following form</h3>
+  <br>
+  <mat-card class="contact-form">
+    <form>
+      <mat-form-field class="name">
         <mat-label>Name</mat-label>
         <input matInput>
       </mat-form-field>
-    <br>
-    <mat-form-field class="email">
-      <mat-label>Email</mat-label>
-      <input matInput [formControl]="emailFormControl" placeholder="email@domain.com">
-      <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
-        Please enter a valid email address
-      </mat-error>
-      <mat-error *ngIf="emailFormControl.hasError('required')">
-        Email is <strong>required</strong>
-      </mat-error>
-    </mat-form-field>
-    <br>
-    <mat-form-field class="message">
+      <br>
+      <mat-form-field class="email">
+        <mat-label>Email</mat-label>
+        <input matInput [formControl]="emailFormControl" placeholder="email@domain.com">
+        <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+          Please enter a valid email address
+        </mat-error>
+        <mat-error *ngIf="emailFormControl.hasError('required')">
+          Email is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+      <br>
+      <mat-form-field class="message">
         <mat-label>Message</mat-label>
-        <textarea matInput [formControl]="formControl"></textarea>
+        <textarea matInput [formControl]="formControl" cdkTextareaAutosize cdkAutosizeMinRows="5" cdkAutosizeMaxRows="25"></textarea>
         <mat-error *ngIf="formControl.hasError('required')">
           Please enter a message
         </mat-error>
-    </mat-form-field>
-    <br>
-    <button mat-button type="submit"> Send Message </button>
-  </form>
+      </mat-form-field>
+      <br>
+      <button mat-button type="submit"> Send Message </button>
+    </form>
+  </mat-card>
+</div>

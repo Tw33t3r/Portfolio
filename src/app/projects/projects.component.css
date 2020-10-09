@@ -4,8 +4,14 @@ h1{
     position: relative;
 }
 
+.shell{
+    margin: auto;
+    background: lightGray;
+    border-radius: 12px;
+}
+
 .content{
-    padding: 16px;
+    padding: 20px;
 }
 
 .project{

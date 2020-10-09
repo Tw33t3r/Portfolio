@@ -1,0 +1,22 @@
+h1{
+    font-size: 250%;
+    top: 25%;
+    left: 4%;
+    position: relative;
+
+}
+
+h3{
+    left: 4%;
+    position: relative;
+}
+
+.contact-form{
+    left: 5%;
+    width: 40%;
+    position: relative;
+}
+
+.message{
+    width: 90%;
+}

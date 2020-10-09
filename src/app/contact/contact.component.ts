@@ -1,5 +1,5 @@
-import {Component} from '@angular/core';
-import {FormControl, Validators} from '@angular/forms';
+import { Component } from '@angular/core';
+import { FormControl, Validators } from '@angular/forms';
 
 
 /*
@@ -11,6 +11,7 @@ https://medium.com/@babatundelamidi/build-an-angular-contact-form-and-post-data-
 https://www.techiediaries.com/angular-formdata/
 
 https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html
+https://aws.amazon.com/premiumsupport/knowledge-center/cloudfront-serve-static-website/
 https://aws.amazon.com/blogs/architecture/create-dynamic-contact-forms-for-s3-static-websites-using-aws-lambda-amazon-api-gateway-and-amazon-ses/
 */
 
@@ -18,7 +19,7 @@ https://aws.amazon.com/blogs/architecture/create-dynamic-contact-forms-for-s3-st
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.html'],
+  styleUrls: ['./contact.component.css'],
 })
 export class ContactComponent {
   formControl = new FormControl('', [

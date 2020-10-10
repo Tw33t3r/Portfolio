@@ -4,32 +4,33 @@
   <br>
   <div fxLayout = "row">
   <mat-card class="contact-form" fxFlex="40%" fxFlex.s = "100%" fxFlex.xs="100%">
-    <form> 
-      <mat-form-field class="name">
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()"> 
+      <mat-form-field class="nameField">
         <mat-label>Name</mat-label>
-        <input matInput>
+        <input matInput type="text" formControlName = "Name">
       </mat-form-field>
       <br>
-      <mat-form-field class="email">
+      <mat-form-field class="emailField">
         <mat-label>Email</mat-label>
-        <input matInput [formControl]="emailFormControl" placeholder="email@domain.com">
-        <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+        <input matInput type="text" formControlName = "Email" placeholder="email@domain.com">
+        
+        <mat-error *ngIf="contactForm.hasError('email', 'Email') && !contactForm.hasError('required', 'Email')">
           Please enter a valid email address
         </mat-error>
-        <mat-error *ngIf="emailFormControl.hasError('required')">
+        <mat-error *ngIf="contactForm.hasError('required', 'Email')">
           Email is <strong>required</strong>
         </mat-error>
       </mat-form-field>
       <br>
-      <mat-form-field class="message">
+      <mat-form-field class="messageField">
         <mat-label>Message</mat-label>
-        <textarea matInput [formControl]="formControl" cdkTextareaAutosize cdkAutosizeMinRows="5" cdkAutosizeMaxRows="25"></textarea>
-        <mat-error *ngIf="formControl.hasError('required')">
+        <textarea matInput type="text" formControlName = "Message" cdkTextareaAutosize cdkAutosizeMinRows="5" cdkAutosizeMaxRows="25"></textarea>
+        <mat-error *ngIf="contactForm.hasError('required', 'Message')">
           Please enter a message
         </mat-error>
       </mat-form-field>
       <br>
-      <button mat-button type="submit"> Send Message </button>
+      <button mat-button type="submit" [disabled]="!contactForm.valid"> Send Message </button>
     </form>
   </mat-card>
   <div fxFlex.xs = "10%"></div>

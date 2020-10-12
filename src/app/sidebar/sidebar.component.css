@@ -10,15 +10,17 @@
 .sidenav .mat-toolbar {
   background: inherit;
   position: absolute;
-  background-color:transparent;
 }
 
 .mat-toolbar.mat-primary {
   position: fixed;
   top: 0;
   z-index: 1;
-  background-color: black;
-  opacity: 50%;
+  background-color: rgba(0,0,0,.8);
+}
+
+.title{
+  color: rgb(204, 204, 204);
 }
 
 .skills{

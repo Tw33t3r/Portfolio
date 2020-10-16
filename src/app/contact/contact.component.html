@@ -1,6 +1,6 @@
 <div class="contact" fxLayout = "column">
   <h1>Contact</h1>
-  <h3>If you would like to get in touch, please fill out the following form</h3>
+  <h3>If you would like to get in touch, please fill and submit the following form</h3>
   <br>
   <div fxLayout = "row">
   <mat-card class="contact-form" fxFlex="40%" fxFlex.s = "100%" fxFlex.xs="100%">
@@ -30,7 +30,7 @@
         </mat-error>
       </mat-form-field>
       <br>
-      <button mat-button type="submit" [disabled]="!contactForm.valid"> Send Message </button>
+      <button mat-button id="submitButton" type="submit" [disabled]="!contactForm.valid"> {{buttonText}} </button>
     </form>
   </mat-card>
   <div fxFlex.xs = "10%"></div>

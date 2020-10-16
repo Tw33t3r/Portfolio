@@ -2,15 +2,6 @@ import { Component } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 
-
-/*
-TODO
-https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html
-https://aws.amazon.com/premiumsupport/knowledge-center/cloudfront-serve-static-website/
-https://aws.amazon.com/blogs/architecture/create-dynamic-contact-forms-for-s3-static-websites-using-aws-lambda-amazon-api-gateway-and-amazon-ses/
-*/
-
-
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -22,7 +13,8 @@ export class ContactComponent {
     
   }
 
-  SERVER_URL = "AWSLink"
+  buttonText = "Send Message";
+  SERVER_URL = "https://ww44mfx9bg.execute-api.us-east-2.amazonaws.com/01/contact";
 
   contactForm = new FormGroup({
     Name : new FormControl(''),
@@ -36,14 +28,16 @@ export class ContactComponent {
   })
 
   onSubmit(){
-    const formData =  new FormData();
-    formData.append('name', this.contactForm.get('Name').value);
-    formData.append('email', this.contactForm.get('Email').value);
-    formData.append('message', this.contactForm.get('Message').value);
+    var data = {
+      name : this.contactForm.get('Name').value,
+      email : this.contactForm.get('Email').value,
+      message : this.contactForm.get('Message').value
+    };
+    data : JSON.stringify(data);
 
-    this.httpClient.post<any>(this.SERVER_URL, formData).subscribe(
-      (res) => console.log(res),
-      (err) => console.log(err)
+    this.httpClient.post<any>(this.SERVER_URL, data).subscribe(
+      (res) => this.buttonText = "Submitted!",
+      (err) => this.buttonText = "Failed to send message"
     )
   }
 }

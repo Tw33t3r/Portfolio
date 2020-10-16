@@ -20,3 +20,7 @@ h3{
 .messageField{
     width: 90%;
 }
+
+.mat-button{
+    background-color: gainsboro;
+}

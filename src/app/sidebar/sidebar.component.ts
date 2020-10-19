@@ -23,10 +23,6 @@ export class SidebarComponent {
   }
 
   downloadResume(){
-    let link = document.createElement("a");
-    link.download = "Garrett-Tvedt-Resume.pdf";
-    link.href = "assets/resume.pdf";
-    link.click();
-    link.remove();
+    window.open("/assets/resume.pdf", "_blank")
   }
 }

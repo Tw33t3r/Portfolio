@@ -51,7 +51,7 @@
     "description": "A speech skill for Amazon Alexa that assists a user in creating speeches, and feeds them tongue twisters.",
     "importance": "This tool was created as a group project in JavaScript using AWS lambda expressions. Because of the unique voice interaction method special care was taken in ensuring the user experience was solid.",
     "demonstrationLink": "",
-    "sourceLink": "https://github.com/Tw33t3r/midiClick",
+    "sourceLink": "https://github.com/Tw33t3r/AlexaSpeech",
     "image": "/assets/alexa.jpg"
 }
 ]

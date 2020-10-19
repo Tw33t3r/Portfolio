@@ -8,8 +8,11 @@
       <button mat-list-item (click)="scroll(home)">Home</button>
       <button mat-list-item (click)="scroll(skills)">Skills</button>
       <button mat-list-item (click)="scroll(projects)">Projects</button>
-      <a mat-list-item (click)="downloadResume()">Resume</a>
       <button mat-list-item (click)="scroll(contact)">Contact</button>
+      <a mat-list-item (click)="downloadResume()">
+        <mat-icon>get_app</mat-icon>
+        Resume
+      </a>
     </mat-action-list>
   </mat-sidenav>
   <mat-sidenav-content class="content">

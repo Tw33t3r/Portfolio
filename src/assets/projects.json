@@ -1,34 +1,18 @@
 [{
-    "title": "Filesystem",
+    "title": "Functional Unix Filesystem",
     "description": "A functional Unix filesystem with a minimal partition manager and disk manager.",
     "importance": "This was initally a group project, coded in C++, managed with the scrum framework. Code was further edited and optimized for portfolio use.",
     "demonstrationLink": "",
     "sourceLink": "https://github.com/Tw33t3r/Filesystem",
-    "image": "/assets/filesystem.png"
-},
-{
-    "title": "Portfolio Website",
-    "description": "The website you are viewing right now!",
-    "importance": "This website was created using Angular, Angular Materials, and Typescript. It was created with UI/UX principles in mind and serves as a demonstration of frontend programming.",
-    "demonstrationLink": "",
-    "sourceLink": "",
-    "image": "/assets/website.png"
+    "image": "/assets/filesystem.webp"
 },
 {
     "title": "Water Bill Web Scraper",
     "description": "An automated web scraper to gather data about a realtor's water bill.",
-    "importance": "This project was programmed as a freelance project in Java. It uses HTMLUnit to handle post and get requests. It will download and open the captcha for the user to enter, then present data regarding the properties entered.",
+    "importance": "This project was programmed for a realtor as a freelance project in Java. It uses HTMLUnit to handle post and get requests. It will download and open a captcha for the user to enter, then present data regarding the properties entered.",
     "demonstrationLink": "",
     "sourceLink": "https://github.com/Tw33t3r/WaterBill",
-    "image": "/assets/water.png"
-},
-{
-    "title": "Chromium Monitor",
-    "description": "Monitors active chrome tabs and saves data regarding time spent on active tabs.",
-    "importance": "This chrome extension, programmed in JavaScript, was created as a productivity tool. This program presents data on how a user spends their time and assits the user in finding where good habits break down. This tool can also be used at enterprise level to monitor employee productivity.",
-    "demonstrationLink": "",
-    "sourceLink": "https://github.com/Tw33t3r/ChromiumMonitor",
-    "image": "/assets/monitor.jpg"
+    "image": "/assets/water.webp"
 },
 {
     "title": "Optitrack Demonstration",
@@ -36,7 +20,23 @@
     "importance": "This demonstration game was a group project created in Unity using C#. It features tracking of a real world item, like a hammer, that is reflected in the game world. This combination allows the weight and feel of an item to add to a sense of kinesthetic movement.",
     "demonstrationLink": "",
     "sourceLink": "https://github.com/Tw33t3r/OptitrackDemo",
-    "image": "/assets/optitrack.png"
+    "image": "/assets/optitrack.webp"
+},
+{
+    "title": "Portfolio Website",
+    "description": "The website you are viewing right now!",
+    "importance": "This website, optimized using Google's best practices, was created using Angular, Typescript, and AWS Lambda. It was created with UI/UX principles in mind and serves as a demonstration of frontend programming and backend programming for managing contact information.",
+    "demonstrationLink": "",
+    "sourceLink": "https://github.com/Tw33t3r/Portfolio",
+    "image": "/assets/website.webp"
+},
+{
+    "title": "Chromium Monitor",
+    "description": "Monitors active chrome tabs and saves data regarding time spent on active tabs.",
+    "importance": "This chrome extension, programmed in JavaScript, was created as a productivity tool. This program presents data on how a user spends their time and assits the user in finding where good habits break down. This tool can also be used at enterprise level to monitor employee productivity.",
+    "demonstrationLink": "",
+    "sourceLink": "https://github.com/Tw33t3r/ChromiumMonitor",
+    "image": "/assets/monitor.webp"
 },
 {
     "title": "MidiClick",
@@ -44,14 +44,14 @@
     "importance": "This Bash script detects midi inputs using aseqdump, it then executes an xdotool click command on screen. Tools like this can be used to gamify musical instrument practice, or as part of an accessibility suite.",
     "demonstrationLink": "",
     "sourceLink": "https://github.com/Tw33t3r/midiClick",
-    "image": "/assets/midi.png"
+    "image": "/assets/midi.webp"
 },
 {
     "title": "Alexa Speech Tool",
     "description": "A speech skill for Amazon Alexa that assists a user in creating speeches, and feeds them tongue twisters.",
-    "importance": "This tool was created as a group project in JavaScript using AWS lambda expressions. Because of the unique voice interaction method special care was taken in ensuring the user experience was solid.",
+    "importance": "This tool was created as a group project in JavaScript using AWS lambda expressions. Because of the unique voice method of voice interaction, special care was taken in ensuring the user experience was solid.",
     "demonstrationLink": "",
     "sourceLink": "https://github.com/Tw33t3r/AlexaSpeech",
-    "image": "/assets/alexa.jpg"
+    "image": "/assets/alexa.webp"
 }
 ]

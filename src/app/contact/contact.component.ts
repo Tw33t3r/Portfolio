@@ -14,7 +14,7 @@ export class ContactComponent {
   }
 
   buttonText = "Send Message";
-  SERVER_URL = "https://ww44mfx9bg.execute-api.us-east-2.amazonaws.com/01/contact";
+  SERVER_URL = "YOUR URL HERE";
 
   contactForm = new FormGroup({
     Name : new FormControl(''),

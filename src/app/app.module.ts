@@ -26,7 +26,6 @@ import { HomeComponent } from './home/home.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
-import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -37,9 +36,8 @@ import { FooterComponent } from './footer/footer.component';
     HomeComponent,
     SkillsComponent,
     ProjectsComponent,
-    ContactComponent,
-    FooterComponent
-  ],
+    ContactComponent
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,

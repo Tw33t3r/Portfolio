@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { UntypedFormGroup, UntypedFormControl, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
@@ -16,13 +16,13 @@ export class ContactComponent {
   buttonText = "Send Message";
   SERVER_URL = "YOUR URL HERE";
 
-  contactForm = new FormGroup({
-    Name : new FormControl(''),
-    Email : new FormControl('', [
+  contactForm = new UntypedFormGroup({
+    Name : new UntypedFormControl(''),
+    Email : new UntypedFormControl('', [
       Validators.required,
       Validators.email,
     ]),
-    Message : new FormControl('', [
+    Message : new UntypedFormControl('', [
       Validators.required
     ])
   })

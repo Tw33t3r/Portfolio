@@ -24,4 +24,11 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  scroll(){
+    window.scrollBy(
+    {  
+      top: window.innerHeight / 1.5,
+      behavior: 'smooth'
+    });
+  }
 }

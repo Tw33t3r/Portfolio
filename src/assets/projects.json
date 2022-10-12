@@ -1,49 +1,50 @@
-[{
-    "title": "Cartallos Finance",
-    "description": "Solidity Smart Contracts created for Cartallos Finance, a cryptocurrency index token platform.",
-    "importance": "This repository a public, open source codebase, created as a member of Cartallos Finance. The Cartallos Core token automates purchases from an Automated Market Maker and acts as an index token redeemable at any time for the full value of underlying assets. The Cartallos governance token handles ECDSA cryptographic signing for token holders to submit proposals for on-chain governance. Additionally, deployment and test scripts were created in JavaScript for each relevant ERC20 token.",
-    "demonstrationLink": "",
-    "sourceLink": "https://github.com/instrumentDAO/Cartallos",
-    "image": "/assets/cartallos.png"
-},   
-{
-    "title": "Functional Unix Filesystem",
-    "description": "A functional Unix filesystem with a partition manager and disk manager.",
-    "importance": "This was initally a group project, coded in C++, managed with the scrum framework. Code was further edited and optimized for portfolio use. This includes a full implementation of file and directory creation, renaming, deletion, insertion, read, write, append, and lock.",
-    "demonstrationLink": "",
-    "sourceLink": "https://github.com/Tw33t3r/Filesystem",
-    "image": "/assets/filesystem.webp"
-},
-{
-    "title": "Optitrack Demonstration",
-    "description": "A demonstration of Optitrack outside-in tracking working simultaneously with a Vive VR headset.",
-    "importance": "This demonstration game was a group project created in Unity using C#. It features tracking of a real world item, like a hammer, that is reflected in the game world. This combination allows the weight and feel of an item to add to a sense of kinesthetic movement.",
-    "demonstrationLink": "",
-    "sourceLink": "https://github.com/Tw33t3r/OptitrackDemo",
-    "image": "/assets/optitrack.webp"
-},
-{
-    "title": "Water Bill Web Scraper",
-    "description": "An automated web scraper to gather data about a realtor's water bill.",
-    "importance": "This project was programmed for a realtor as a freelance project in Java. It uses HTMLUnit to handle post and get requests. It will download and open a captcha for the user to enter, then present data regarding the properties entered.",
-    "demonstrationLink": "",
-    "sourceLink": "https://github.com/Tw33t3r/WaterBill",
-    "image": "/assets/water.webp"
-},
-{
-    "title": "Portfolio Website",
-    "description": "The website you are viewing right now!",
-    "importance": "This website, optimized using Google's best practices, was created using Angular, Typescript, and AWS Lambda. It was created with UI/UX principles in mind and serves as a demonstration of frontend programming and backend programming for managing contact information.",
-    "demonstrationLink": "",
-    "sourceLink": "https://github.com/Tw33t3r/Portfolio",
-    "image": "/assets/website.webp"
-},
-{
-    "title": "Chromium Monitor",
-    "description": "Monitors active chrome tabs and saves data regarding time spent on active tabs.",
-    "importance": "This chrome extension, programmed in JavaScript, was created as a productivity tool. This program presents data on how a user spends their time and assits the user in finding where good time management habits break down.",
-    "demonstrationLink": "",
-    "sourceLink": "https://github.com/Tw33t3r/ChromiumMonitor",
-    "image": "/assets/monitor.webp"
-}
+[
+    {
+        "title": "Harmony Consensus-Log-Analysis",
+        "description": "Analyze Harmony Logs for Consensus Performance Metrics",
+        "importance": "A parser for large 10MB+(about 20k+ lines long) logs from the harmony network’s consensus nodes to find opportunities to improve performance in their consensus algorithm.",
+        "demonstrationLink": "",
+        "sourceLink": "https://github.com/Tw33t3r/Consensus-log-analysis",
+        "image": "/assets/harmony.webp"
+    },
+    {
+        "title": "Cartallos Finance",
+        "description": "Solidity Smart Contracts created for Cartallos Finance, a cryptocurrency index token platform.",
+        "importance": "This repository a public, open source codebase, created as a founding member of Cartallos Finance. The Cartallos Core token automates purchases from an Automated Market Maker and acts as an index token redeemable at any time for the full value of underlying assets. The Cartallos governance token handles ECDSA cryptographic signing for token holders to submit proposals for on-chain governance. Additionally, deployment and test scripts were created in JavaScript for each relevant ERC20 token.",
+        "demonstrationLink": "",
+        "sourceLink": "https://github.com/instrumentDAO/Cartallos",
+        "image": "/assets/cartallos.png"
+    },
+    {
+        "title": "Lightweight Unix Filesystem",
+        "description": "A Lightweight Unix filesystem with a partition manager and disk manager.",
+        "importance": "This was initally a group project, coded in C++, managed with the scrum framework. Code was further edited and optimized for portfolio use. This includes a full implementation of file and directory creation, renaming, deletion, insertion, read, write, append, and lock.",
+        "demonstrationLink": "",
+        "sourceLink": "https://github.com/Tw33t3r/Filesystem",
+        "image": "/assets/filesystem.webp"
+    },
+    {
+        "title": "Optitrack Demonstration",
+        "description": "A demonstration of Optitrack outside-in tracking working simultaneously with a Vive VR headset.",
+        "importance": "This demonstration game was created in Unity using C#. It features tracking of a real world item, like a hammer, that is reflected in the game world. This combination allows the weight and feel of an item to add to a sense of kinesthetic movement.",
+        "demonstrationLink": "",
+        "sourceLink": "https://github.com/Tw33t3r/OptitrackDemo",
+        "image": "/assets/optitrack.webp"
+    },
+    {
+        "title": "Portfolio Website",
+        "description": "The website you are viewing right now!",
+        "importance": "This website, optimized using Google's best practices, was created using Angular, Typescript, and AWS Lambda. It was created with UI/UX principles in mind and serves as a demonstration of frontend programming and backend programming.",
+        "demonstrationLink": "",
+        "sourceLink": "https://github.com/Tw33t3r/Portfolio",
+        "image": "/assets/website.webp"
+    },
+    {
+        "title": "Chromium Monitor",
+        "description": "Monitors active chrome tabs and saves data regarding time spent on active tabs.",
+        "importance": "This chrome extension, programmed in JavaScript, was created as a productivity tool. This program presents data on how a user spends their time and assits the user in finding where good time management habits break down.",
+        "demonstrationLink": "",
+        "sourceLink": "https://github.com/Tw33t3r/ChromiumMonitor",
+        "image": "/assets/monitor.webp"
+    }
 ]

@@ -3,10 +3,22 @@ h1{
     position: relative;
 }
 
+h2{
+    color:rgb(63, 63, 63);
+    text-align: center;
+}
+
 .content{
     padding: 16px;
 }
 
 .mat-chip-list{
     width: 300px;
+    align-content:center;
+    justify-content:center;
+    text-align: center;
+}
+
+::ng-deep .mat-chip-list-wrapper{
+    display: inline-block !important;
 }

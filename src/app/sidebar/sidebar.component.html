@@ -3,7 +3,6 @@
       [attr.role]="'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="false">
-    <mat-toolbar></mat-toolbar>
     <mat-action-list>
       <button mat-list-item (click)="scroll(home)">Home</button>
       <button mat-list-item (click)="scroll(skills)">Skills</button>
